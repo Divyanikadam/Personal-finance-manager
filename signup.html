@@ -15,59 +15,94 @@
 }
 
 .container {
-    display: flex;
-    width: 600px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
+                 display: flex;
+                 width: 600px;
+                 background: white;
+                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                 border-radius: 10px;
+                 overflow: hidden;
+            }
 
-.left-panel {
-    width: 40%;
-    background: #006d5b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        .left-panel {
+                width: 40%;
+                background: #006d5b;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Center vertically */
+                align-items: center;
+             }
 
-.right-panel {
-    width: 60%;
-    padding: 20px;
-    text-align: center;
-}
+        .right-panel {
+               width: 60%;
+               padding: 30px;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center; /* Center vertically */
+               align-items: center;
+             }
+        
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
-form input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        .logo-container img {
+            max-width: 100%;
+            max-height: 150px;  
+        } 
 
-button {
-    width: 95%;
-    padding: 10px;
-    background: #006d5b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .left-panel h2 {
+            margin-top: 10px; 
+            font-size: 20px;
+        } 
 
-button:hover {
-    background: #004b3a;
-}
+        .right-panel {
+             width: 60%;
+             padding: 20px;
+             text-align: center;
+        } 
 
-p {
-    margin-top: 10px;
-}
+        form input {
+             width: 90%;
+             padding: 10px;
+             margin: 10px 0;
+             border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+             width: 95%;
+             padding: 10px;
+             background: #006d5b;
+             color: white;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+        }
+
+        button:hover {
+             background: #004b3a;
+        }
+
+        p {
+             margin-top: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="left-panel">
+        <div class="logo-container">
         <img src="C:\Users\Divyani\Personal-finance-manager\logo.png" alt="Finance-Management-Logo">
+        </div>
         <h2>Personal-Finance-Management</h2>
     </div>
     <div class="right-panel">

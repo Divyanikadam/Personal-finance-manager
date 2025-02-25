@@ -14,23 +14,62 @@
             height: 100vh;
         }
         .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
+                 display: flex;
+                 width: 600px;
+                 background: white;
+                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                 border-radius: 10px;
+                 overflow: hidden;
+            }
+
+        .left-panel {
+                width: 40%;
+                background: #006d5b;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Center vertically */
+                align-items: center;
+             }
+
+        .right-panel {
+               width: 60%;
+               padding: 30px;
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center; /* Center vertically */
+               align-items: center;
+             }
+        
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 10px;
         }
-        h2 {
-            color: #2c6e49;
-        }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 150px;  
+        } 
+
+        .left-panel h2 {
+            margin-top: 10px; 
+            font-size: 20px;
+        } 
+
         input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-        }
+            }
         button {
             background: #2c6e49;
             color: white;
@@ -44,17 +83,26 @@
             background: #1f4d32;
         }
         .signup {
-            margin-top: 10px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+            <img src="C:\Users\Divyani\Personal-finance-manager\logo.png" alt="Finance-Management-Logo">
+        </div>
+            <h2>Personal-Finance-Management</h2>
+            
+        </div>
+        <div class="right-panel">
         <h2>Login</h2>
         <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
-        <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
+        <p class="signup">Don't have an account? <a href="C:\Users\Divyani\Personal-finance-manager\signup.html">Sign Up</a></p>
+         </div>
     </div>
 
     <script>
