@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-panel {
+    width: 40%;
+    background: #006d5b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    background: #006d5b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004b3a;
+}
+
+p {
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left-panel">
+        <img src="C:\Users\Divyani\Personal-finance-manager\logo.png" alt="Finance-Management-Logo">
+        <h2>Personal-Finance-Management</h2>
+    </div>
+    <div class="right-panel">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text"placeholder="Full Name" required>  
+            <input type="text"placeholder="Username" required> 
+            <input type="text"placeholder="Passward" required> 
+            <input type="text"placeholder="Conferm Passward" required>
+            <button type="submit">Sign Up</button>
+             </form>
+             <p>I have an account<a href="C:\Users\Divyani\Personal-finance-manager\login.html">Login</a></p>
+    </div>
+</div>
+    <script>
+        document.querySelector("from").addEventListener("submit",function(event){event.preventDefault();alert("Sign up successful!");
+                    });
+    </script>
+</body>
+</html>
