@@ -91,7 +91,7 @@
     <div class="container">
         <div class="left-panel">
             <div class="logo-container">
-            <img src="C:\Users\Divyani\Personal-finance-manager\logo.png" alt="Finance-Management-Logo">
+            <img src="C:\Users\Divyani\Personal-finance-manager\img\logo.png" alt="Finance-Management-Logo">
         </div>
             <h2>Personal-Finance-Management</h2>
             
@@ -101,7 +101,7 @@
         <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
-        <p class="signup">Don't have an account? <a href="C:\Users\Divyani\Personal-finance-manager\signup.html">Sign Up</a></p>
+        <p class="signup">Don't have an account? <a href="signup.html">Sign Up</a></p>
          </div>
     </div>
 
@@ -116,6 +116,7 @@
             }
             
             alert("Login successful for " + username);
+            window.location.href = "home.html";
         }
     </script>
 </body>

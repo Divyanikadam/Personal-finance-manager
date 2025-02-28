@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts</title>
+    <link rel="stylesheet" href="stylesA.css">
+    <script src="scriptA.js" defer></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <button onclick="navigate('home')">Home</button>
+        <button class="active">Accounts</button>
+        <button onclick="navigate('incomes')">Incomes</button>
+        <button onclick="navigate('expenses')">Expenses</button>
+        <button onclick="navigate('budget')">Budget</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+        <h2>Accounts</h2>
+
+        <div class="account-actions">
+            <div class="create-account">
+                <h3>Create Account</h3>
+                <input type="text" id="accountName" placeholder="Enter account name">
+                <button onclick="createAccount()">Create</button>
+            </div>
+
+            <div class="delete-account">
+                <h3>Delete Account</h3>
+                <select id="accountSelect">
+                    <option value="">--Select--</option>
+                </select>
+                <button onclick="deleteAccount()">Delete</button>
+            </div>
+        </div>
+
+        <h3>Accounts</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Name</th>
+                    <th>Current Balance</th>
+                    <th>Total Expenses</th>
+                </tr>
+            </thead>
+            <tbody id="accountsTable">
+                <tr>
+                    <td>savings</td>
+                    <td>88000.0</td>
+                    <td>137000.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
